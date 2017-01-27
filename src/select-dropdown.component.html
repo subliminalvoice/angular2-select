@@ -19,8 +19,8 @@
                 [ngClass]="{'highlighted': option.highlighted, 'selected': option.selected, 'disabled': option.disabled}"
                 [ngStyle]="getOptionStyle(option)"
                 (click)="onOptionClick(option)"
-                (mouseover)="onOptionMouseover(option)">
-                {{option.label}}
+                (mouseover)="onOptionMouseover(option)"
+                [innerHTML]="option.labelMenu">
             </li>
             <li
                 *ngIf="!optionList.hasShown()"

@@ -2,15 +2,17 @@ export class Option {
 
     value: string;
     label: string;
+    labelMenu: string;
 
     disabled: boolean;
     highlighted: boolean;
     selected: boolean;
     shown: boolean;
 
-    constructor(value: string, label: string) {
+    constructor(value: string, label: string, labelMenu?: string) {
         this.value = value;
         this.label = label;
+        this.labelMenu = labelMenu ? labelMenu : label;
 
         this.disabled = false;
         this.highlighted = false;
