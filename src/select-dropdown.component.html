@@ -20,7 +20,7 @@
                 [ngStyle]="getOptionStyle(option)"
                 (click)="onOptionClick(option)"
                 (mouseover)="onOptionMouseover(option)"
-                [innerHTML]="option.label">
+                [innerHTML]="option.labelMenu">
             </li>
             <li
                 *ngIf="!optionList.hasShown()"
